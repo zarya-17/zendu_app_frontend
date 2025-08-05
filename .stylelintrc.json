@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-tailwindcss"
+  ],
+  "plugins": [
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "prettier/prettier": true,
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "color-function-notation": null,
+    "selector-class-pattern": [
+      "^[a-z0-9]+([A-Z0-9][a-z0-9]*)*$",
+      {
+        "message": "Expected class selector to be in camelCase"
+      }
+    ],
+    "scss/at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["tailwind", "apply", "variants", "responsive", "screen"]
+      }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["tailwind", "apply", "variants", "responsive", "screen"]
+      }
+    ]
+  }
+}
