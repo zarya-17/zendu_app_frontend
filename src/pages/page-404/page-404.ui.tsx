@@ -1,3 +1,9 @@
+import { PageLayout } from '@shared/ui/layouts';
+
 export default function Page404() {
-  return <div>404</div>;
+  return (
+    <PageLayout>
+      <div>Page not found</div>
+    </PageLayout>
+  );
 }
