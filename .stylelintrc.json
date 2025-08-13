@@ -1,7 +1,6 @@
 {
   "extends": [
-    "stylelint-config-standard-scss",
-    "stylelint-config-tailwindcss"
+    "stylelint-config-standard-scss"
   ],
   "plugins": [
     "stylelint-prettier"
@@ -20,13 +19,13 @@
     "scss/at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": ["tailwind", "apply", "variants", "responsive", "screen"]
+        "ignoreAtRules": ["apply", "variants", "responsive", "screen"]
       }
     ],
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": ["tailwind", "apply", "variants", "responsive", "screen"]
+        "ignoreAtRules": ["apply", "variants", "responsive", "screen"]
       }
     ]
   }
