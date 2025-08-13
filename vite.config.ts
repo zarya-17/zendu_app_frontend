@@ -6,8 +6,8 @@ import svgr from 'vite-plugin-svgr';
 import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
-export default defineConfig({
-  base: '/zendu_app_frontend/',
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/zendu_app_frontend/' : '/',
   plugins: [
     react(),
     svgr({ include: '**/*.svg' }),
@@ -30,4 +30,4 @@ export default defineConfig({
       '@shared': path.resolve(__dirname, 'src/shared'),
     },
   },
-});
+}));

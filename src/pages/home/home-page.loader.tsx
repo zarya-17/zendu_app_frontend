@@ -1,7 +1,5 @@
-import { redirect } from 'react-router-dom';
+import { LoaderFunctionArgs } from 'react-router-dom';
 
-import { pathKeys } from '@shared/router';
-
-export default async function homePageLoader() {
-  return redirect(pathKeys.login);
+export default async function homePageLoader(args: LoaderFunctionArgs) {
+  return args;
 }

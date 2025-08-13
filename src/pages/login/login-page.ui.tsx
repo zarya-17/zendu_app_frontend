@@ -1,12 +1,7 @@
-import { AuthButton } from '@shared/ui/buttons';
 import { PageLayout } from '@shared/ui/layouts';
 
+import './login-page.styles.scss';
+
 export default function LoginPage() {
-  return (
-    <PageLayout>
-      <div className="flex justify-center">
-        <AuthButton text="Auth with telegram" />
-      </div>
-    </PageLayout>
-  );
+  return <PageLayout>Login Page</PageLayout>;
 }

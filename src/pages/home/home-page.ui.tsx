@@ -1,3 +1,5 @@
+import { PageLayout } from '@shared/ui/layouts';
+
 export default function HomePage() {
-  return <div>Home Page</div>;
+  return <PageLayout>Home Page</PageLayout>;
 }
