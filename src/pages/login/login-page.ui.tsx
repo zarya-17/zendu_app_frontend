@@ -1,3 +1,7 @@
-export function LoginPage() {
-  return <div>Login Page</div>
+import { PageLayout } from '@shared/ui/layouts';
+
+import './login-page.styles.scss';
+
+export default function LoginPage() {
+  return <PageLayout>Login Page</PageLayout>;
 }

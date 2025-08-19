@@ -1,13 +1,9 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
 
-import { LoginPage } from '@pages/login';
+import './index.scss';
 
-const container = document.getElementById('root') as HTMLElement;
-const root = createRoot(container);
+import App from './app';
 
-root.render(
-  <React.StrictMode>
-    <LoginPage />
-  </React.StrictMode>
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  <App />
 );
